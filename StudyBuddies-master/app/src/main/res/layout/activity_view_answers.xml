@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/TEXT_STATUS_ID"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_weight="0.60"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/text_color"
+            android:typeface="normal"
+            tools:textColor="@android:color/black" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/group_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.00">
+
+        <LinearLayout
+            android:id="@+id/answer_list"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <Button
+        android:text="Add Answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_answer"
+        android:layout_weight="0.07" />
+
+</LinearLayout>

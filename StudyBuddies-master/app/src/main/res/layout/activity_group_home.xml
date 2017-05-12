@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/groupNameHeader"
+        android:textColor="@color/text_color"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favorite_indicator"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:background="#0000"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of Members in Library:"
+        android:id="@+id/numMemHeader"
+        android:textColor="@color/text_color"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_color"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="95dp"
+        android:text="Answer Questions"
+        android:id="@+id/groupQsButton"
+        android:layout_gravity="center_horizontal"
+        android:padding="25dp"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width= "225dp"
+        android:layout_height="95dp"
+        android:text="View Answered Questions"
+        android:id="@+id/answeredQuestions"
+        android:layout_gravity="center_horizontal"
+        android:padding="25dp"
+        android:layout_margin="10dp"
+        />
+    
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="95dp"
+        android:text="Study Groups"
+        android:id="@+id/studyGroupsButton"
+        android:layout_gravity="center_horizontal"
+        android:padding="25dp"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

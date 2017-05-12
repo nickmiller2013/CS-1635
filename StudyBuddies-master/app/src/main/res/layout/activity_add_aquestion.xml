@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginBottom="10dp"
+        android:text="Ask a Question"
+        android:textColor="@color/text_color"
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/group_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Question:"
+            android:textColor="@color/text_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+        <EditText
+            android:id="@+id/group_name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:imeOptions="actionDone"
+            android:hint="Enter Question"/>
+        <!--<TextView-->
+            <!--android:id="@+id/professor_name_text"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="4"-->
+            <!--android:text="Professor's name:"-->
+            <!--android:textColor="@color/text_color"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--/>-->
+        <!--<EditText-->
+            <!--android:id="@+id/professor_name"-->
+            <!--android:inputType="text"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="4"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:hint="Enter professor's name"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/CancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:onClick="cancelAction"/>
+        <Button
+            android:id="@+id/CreateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Create"
+            android:onClick="confirmCreateQuestion"/>
+    </LinearLayout>
+
+
+</LinearLayout>

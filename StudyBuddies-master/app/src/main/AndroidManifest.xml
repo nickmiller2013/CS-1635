@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.pitt.cs.cs1635.studybuddies">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FavoritesActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MyWelcomeActivity"
+            android:theme="@style/WelcomeScreenTheme"/>
+        <activity
+            android:name=".CreateGroupActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CreateStudyGroupActivity"
+            android:parentActivityName=".StudyGroupList" />
+        <activity
+            android:name=".GroupHome"
+            android:label="@string/title_activity_group_home"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GroupQuestionListActivity"
+            android:label="@string/title_activity_group_questions"
+            android:parentActivityName=".GroupHome">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.GroupHome" />
+        </activity>
+        <activity
+            android:name=".AnswerQuestionListActivity"
+            android:label="@string/title_activity_answer_questions"
+            android:parentActivityName=".GroupHome">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.GroupHome" />
+        </activity>
+        <activity
+            android:name=".AnswerQuestion"
+            android:label="Answer_Question"
+            android:parentActivityName=".GroupQuestionListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.GroupQuestionListActivity" />
+        </activity>
+        <activity
+            android:name=".ViewAnswer"
+            android:label="View_Answer"
+            android:parentActivityName=".AnswerQuestionListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.AnswerQuestionListActivity" />
+        </activity>
+        <activity
+            android:name=".StudyGroupList"
+            android:label="@string/title_activity_study_group_list"
+            android:parentActivityName=".GroupHome">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.GroupHome" />
+        </activity>
+        <activity
+            android:name=".StudyGroupHome"
+            android:label="StudyGroupHome"
+            android:parentActivityName=".StudyGroupList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.pitt.cs.cs1635.studybuddies.StudyGroupList" />
+        </activity>
+        <activity android:name=".AddAQuestion"></activity>
+    </application>
+
+</manifest>

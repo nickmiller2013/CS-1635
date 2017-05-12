@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StudyBuddies</string>
+    <string name="title_activity_group_home">GroupHome</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_group_questions">GroupQuestions</string>
+    <string name="title_activity_answer_questions">AnswerQuestions</string>
+
+    <string name="title_activity_study_group_list">StudyGroupList</string>
+</resources>

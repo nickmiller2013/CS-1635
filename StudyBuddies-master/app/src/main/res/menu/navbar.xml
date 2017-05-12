@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home_button"
+        android:icon="@drawable/ic_action_home"
+        android:title="Home"
+        android:tint="@color/white"
+        compat:showAsAction="ifRoom"/>
+    <item android:id="@+id/fav_button"
+        android:icon="@drawable/heart"
+        android:title="Favorite"
+        android:color="@color/white"
+        compat:showAsAction="ifRoom" />
+</menu>
