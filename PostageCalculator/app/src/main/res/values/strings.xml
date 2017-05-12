@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Postage Calculator</string>
+    <string name="non_zero">Please submit a positive/Non-zero number</string>
+    <string name="high_13">Please submit a number less that 13</string>
+    <string name="forA">Price for a &#160;</string>
+    <string name="is">&#160; is going to be $</string>
+    <string name="prompt">Please follow the prompt</string>
+    <string name="letter">Letter</string>
+    <string name="le">Large Envelope</string>
+    <string name="pg">Package</string>
+    <string name="ht">valid range: 0 - 13 oz</string>
+    <string name="clc">Calculate</string>
+    <string name="clr">Clear</string>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/blackButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/black" />
+
+            <Button
+                android:id="@+id/blueButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/blue" />
+
+            <Button
+                android:id="@+id/purpleButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/purple" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/greenButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/green" />
+
+            <Button
+                android:id="@+id/orangeButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/orange" />
+
+            <Button
+                android:id="@+id/redButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/yellowButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/yellow" />
+
+            <Button
+                android:id="@+id/pinkButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/pink" />
+
+            <Button
+                android:id="@+id/aquamarineButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:onClick="setColor"
+                android:background="@color/aquamarine" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
